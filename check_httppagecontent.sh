@@ -2,7 +2,7 @@
 #
 #    Program : check_httppagecontent.sh
 #            :
-#     Author : Deraoui Saïd <said.deraoui@libre-cloud.org
+#     Author : Saïd <said.deraoui@libre-cloud.org
 #    Purpose : Nagios plugin to return Information from Webpage 
 #			 : Return value is prensent and time of load page. 
 #            :
