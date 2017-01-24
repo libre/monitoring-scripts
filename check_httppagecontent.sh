@@ -2,7 +2,7 @@
 #
 #    Program : check_httppagecontent.sh
 #            :
-#     Author : Saïd <said.deraoui@libre-cloud.org
+#     Author : Saïd <said@libre-cloud.org
 #    Purpose : Nagios plugin to return Information from Webpage 
 #			 : Return value is prensent and time of load page. 
 #            :
@@ -58,7 +58,7 @@ print_help() {
 		echo ""		
         print_usage
         echo ""
-        echo "Check loading page Status Check. Github.com/libre/monitoring-scripts - said@libre-cloud.org 2017"
+        echo "Check loading page Status Check. http://github.com/libre/monitoring-scripts - said@libre-cloud.org 2017"
         echo ""
         exit 0
 #        support
