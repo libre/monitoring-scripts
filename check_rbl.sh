@@ -25,19 +25,16 @@ URLRBLCHECK="http://rbl-check.org/rbl_api.php?ipaddress="
 URLDNSPROOF="https://support.proofpoint.com/rbl-lookup.cgi?ip="
 
 # Spoofing Agent Curl for Site check.
-#NAVAGENT="Gecko/20100101"
-#_/
 NAVAGENT=`echo -e "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"`
-
 CURL=`which curl `
 
 # Testing Curl binary exist and parrsing option for script.
 if [ -x /usr/bin/curl ] || [ -x /usr/local/bin/curl ] || [ -x /bin/curl ]; then
-        # Parsing option for Curl -L for location redirection ex: http to redirect 301 to https
-        CURLOPT=(-o ${file} -L -s -S -A "${NAVAGENT}")
+	# Parsing option for Curl -L for location redirection ex: http to redirect 301 to https
+	CURLOPT=(-o ${file} -L -s -S -A "${NAVAGENT}")
 else
-        echo "UNKNOWN: Please check dep. curl not found."
-        exit $STATUS_UNKNOW
+	echo "UNKNOWN: Please check dep. curl not found."
+	exit $STATUS_UNKNOW
 
 fi
 
